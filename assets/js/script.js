@@ -40,7 +40,8 @@ const listarTemplateTweet = (tweet) => {
     img.className = "tweet__fotoPerfil"
 
     let div = document.createElement("div");
-    div.className = "tweet__conteudo"
+    div.className = "tweet__conteudo";
+    div.classList.add("tweet__conteudo");
 
     let h2 = document.createElement("h2");
     h2.innerText = nome;
@@ -61,4 +62,5 @@ const listarTemplateTweet = (tweet) => {
     li.appendChild(div);
 
     feed.appendChild(li);
+    textarea.value = ""
 }
